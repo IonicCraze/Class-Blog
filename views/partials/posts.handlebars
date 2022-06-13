@@ -1,0 +1,11 @@
+<ul>
+    {{#each posts as |post|}}
+    <a href="/post/{{post.id}}">
+        <li>
+            <h2>{{post.blog_title}}</h2>
+            <h3>{{post.user.name}}</h3>
+            <p>{{post.blog_content}}</p>
+        </li>
+    </a>
+    {{/each}}
+</ul>
